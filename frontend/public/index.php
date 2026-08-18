@@ -25,8 +25,8 @@
             <ul>
                 <li><a onclick="scrollToSection('inicio')">INICIO</a></li>
                 <li><a onclick="scrollToSection('nosotros')">NOSOTROS</a></li>
-                <li><a onclick="scrollToSection('adopta')">ADOPTÁ</a></li>
-                <li><a onclick="scrollToSection('hogar-de-transito')">HOGAR DE TRÁNSITO</a></li>
+                <li><a href="mascotas.php#adopcion">ADOPTÁ</a></li>
+                <li><a href="mascotas.php#transito">HOGAR DE TRÁNSITO</a></li>
                 <li><a onclick="openModal('Voluntariado', '¡Gracias por querer sumarte! Dejanos tu mensaje y nos pondremos en contacto para coordinar las actividades.')">SE VOLUNTARIO</a></li>
                 <li><a onclick="scrollToSection('ayudar')">CÓMO AYUDAR</a></li>
                 <li><a onclick="scrollToSection('contacto')">CONTACTO</a></li>
@@ -43,8 +43,8 @@
             <h2>CAMBIÁ UNA VIDA, <span>GANÁ UN AMIGO.</span></h2>
             <p>En Patitas Seguras rescatamos, cuidamos y buscamos un hogar lleno de amor para cada patita que lo necesita.</p>
             <div class="hero-buttons">
-                <button class="btn-primary" onclick="scrollToSection('adopta')"><i class="fa-solid fa-paw"></i> ADOPTÁ</button>
-                <button class="btn-primary" onclick="scrollToSection('hogar-de-transito')"><i class="fa-solid fa-paw"></i> HOGAR DE TRÁNSITO</button>
+                <a class="btn-primary" href="mascotas.php#adopcion"><i class="fa-solid fa-paw"></i> ADOPTÁ</a>
+                <a class="btn-primary" href="mascotas.php#transito"><i class="fa-solid fa-paw"></i> HOGAR DE TRÁNSITO</a>
                 <button class="btn-outline" onclick="openModal('Donaciones', '¡Muchas gracias! Podés colaborar mediante transferencia a nuestro alias oficial: PATITAS.SEGURAS.MP')"><i class="fa-solid fa-heart"></i> DONAR</button>
             </div>
         </div>
@@ -55,7 +55,7 @@
 
     <!-- TARJETAS PRINCIPALES -->
     <section id="adopta" class="action-cards">
-        <div class="card" onclick="openModal('Adopciones', 'Aquí podrás ver el listado completo de perritos y gatitos listos para ser adoptados responsablemente.')">
+        <div class="card" onclick="window.location.href='mascotas.php#adopcion'">
             <div class="card-body">
                 <h3><i class="fa-solid fa-house"></i> ADOPTÁ</h3>
                 <p>Dale a un animalito una segunda oportunidad de ser feliz.</p>
@@ -71,7 +71,7 @@
             <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1" alt="Voluntariado">
             <span class="card-btn">SUMATE COMO VOLUNTARIO</span>
         </div>
-        <div class="card" onclick="openModal('Hogar de Tránsito', 'Necesitamos hogares temporales mientras encuentran su familia definitiva.')">
+        <div class="card" onclick="window.location.href='mascotas.php#transito'">
             <div class="card-body">
                 <h3><i class="fa-solid fa-house-chimney"></i> HOGAR DE TRÁNSITO</h3>
                 <p>Abri tu hogar por un tiempo y ayudanos a salvar más vidas.</p>
