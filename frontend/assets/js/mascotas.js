@@ -1,4 +1,4 @@
-fetch('api/mascotas.php')
+fetch('http://localhost:8082/public/index.php?recurso=mascotas')
     .then(response => response.json())
     .then(data => {
         console.log(data);
@@ -27,7 +27,7 @@ fetch('api/mascotas.php')
                     <div class="pet-card-body">
                         <h4>${mascota.nombre}</h4>
                         <p class="pet-card-meta">
-                            ${mascota.nombre_especie} · ${mascota.nombre_raza} · ${mascota.sexo} · ${mascota.tamaño}
+                            ${mascota.especie} · ${mascota.raza} · ${mascota.sexo} · ${mascota.tamaño}
                         </p>
                         <p>${mascota.historial}</p>
                         <div class="pet-card-actions">
