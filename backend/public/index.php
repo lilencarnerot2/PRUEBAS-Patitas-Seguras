@@ -17,7 +17,7 @@ header('Content-Type: application/json; charset=utf-8'); # instruccion q avisa q
 $recurso = $_GET['recurso'] ?? '';
 $id = $_GET['id'] ?? null;
 
-if ($recurso === 'mascota') {
+if ($recurso === 'mascotas') {
 
     try {
 
